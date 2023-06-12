@@ -3,7 +3,10 @@
 The `ts-rest-api-client` is a code-sample that provides a convenient and type-safe way to make RESTful HTTP requests in TypeScript. It enables you to define API endpoints, request options, and response types using TypeScript types and interfaces, ensuring type safety and enhancing developer productivity.
 
 ## Usage
+
 Fully-working Node.js example is available in the [`src folder`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src).
+
+In the provided code sample, we utilize the [JSONPlaceholder API](https://jsonplaceholder.typicode.com) to simulate a RESTful backend and showcase how to perform CRUD operations on mock data.
 
 To use the library, follow these steps:
 
