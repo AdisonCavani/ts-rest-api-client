@@ -118,6 +118,6 @@ To handle errors, use `try-catch` blocks and catch the `Error` object:
 try {
   // API request
 } catch (error) {
-  console.error("API request failed:", error);
+  // TODO: handle the error
 }
 ```
