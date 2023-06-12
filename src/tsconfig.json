@@ -8,7 +8,6 @@
     "skipLibCheck": true,
     "allowJs": false,
     "strict": true,
-    "importsNotUsedAsValues": "error",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
@@ -20,9 +19,6 @@
     "allowUnusedLabels": false
   },
   "baseUrl": "./app",
-  "paths": {
-    "@lib/*": ["lib/*"]
-  },
   "include": ["app/**/*"],
   "exclude": ["dist", "node_modules"]
 }
