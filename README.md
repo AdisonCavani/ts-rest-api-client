@@ -1,8 +1,9 @@
 # Typesafe TypeScript REST HTTP API Client
 
-The Typesafe TypeScript REST HTTP API Client is a library that provides a convenient and type-safe way to make RESTful HTTP requests in TypeScript. It enables you to define API endpoints, request options, and response types using TypeScript types and interfaces, ensuring type safety and enhancing developer productivity.
+The `ts-rest-api-client` is a code-sample that provides a convenient and type-safe way to make RESTful HTTP requests in TypeScript. It enables you to define API endpoints, request options, and response types using TypeScript types and interfaces, ensuring type safety and enhancing developer productivity.
 
 ## Usage
+Fully-working Node.js example is available in the [`src folder`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src).
 
 To use the library, follow these steps:
 
@@ -12,15 +13,15 @@ To use the library, follow these steps:
 API_URL="https://jsonplaceholder.typicode.com"
 ```
 
-2. Copy the code inside [`src`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src) folder
+2. Copy the code from [`src`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src) folder
 
-3. Import an API client:
+3. Import an API client (in `index.ts` or other file):
 
 ```typescript
 import { client } from "./http/client";
 ```
 
-1. Make requests to the defined API endpoints using the client:
+4. Make requests to the defined API endpoints using the client:
 
 ```typescript
 // GET  /posts
@@ -46,7 +47,7 @@ const newPost = await client("/posts").post({
 });
 ```
 
-4. Handle the API responses based on the defined response types:
+5. Handle the API responses based on the defined response types:
 
 ```typescript
 // The Post type is inhered, no need for typing it
