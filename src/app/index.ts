@@ -1,9 +1,11 @@
-import { env } from "./env/config";
 import { client } from "./http/client";
+import dotenv from "dotenv";
 
 async function main() {
+  dotenv.config();
+
   console.log("Starting requests");
-  console.log("Api url:", env.API_URL);
+  console.log("Api url:", process.env.API_URL);
 
   // GET  /posts
   await client("/posts").get();

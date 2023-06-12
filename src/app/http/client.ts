@@ -1,39 +1,13 @@
-import { env } from "../env/config";
-import {
-  CreatePostOptions,
-  GetCommentsByPostIdOptions,
-  MutationOptions,
-  PatchPostOptions,
-  PutPostOptions,
-  QueryOptions,
-} from "./requests";
-import { Comment, Post } from "./responses";
-
-const baseUrl = env.API_URL;
-
-export interface EndpointsSchema {
-  "/posts": {
-    get: () => Promise<Post[]>;
-    post: (options: CreatePostOptions) => Promise<Post>;
-  };
-  "/posts/{id}": {
-    get: () => Promise<Post>;
-    put: (options: PutPostOptions) => Promise<Post>;
-    patch: (options: PatchPostOptions) => Promise<Post>;
-    delete: () => Promise<void>;
-  };
-  "/comments": {
-    get: (options: GetCommentsByPostIdOptions) => Promise<Comment[]>;
-  };
-  "/posts/{id}/comments": {
-    get: () => Promise<Comment[]>;
-  };
-}
+import { MutationOptions, QueryOptions } from "./requests";
+import { EndpointsSchema } from "./schema";
 
 export function client<TPath extends keyof EndpointsSchema>(
   path: TPath,
   ...pathParam: PathParameter<TPath>
 ): EndpointsSchema[TPath] {
+  // TODO: You can try to move it to the top
+  const baseUrl = process.env.API_URL;
+
   const fullPath =
     baseUrl +
     path
