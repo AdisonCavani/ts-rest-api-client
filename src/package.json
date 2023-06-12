@@ -4,8 +4,7 @@
     "dev": "nodemon app/index.ts"
   },
   "dependencies": {
-    "dotenv": "^16.1.4",
-    "zod": "^3.21.4"
+    "dotenv": "^16.1.4"
   },
   "devDependencies": {
     "@types/node": "^20.3.0",
