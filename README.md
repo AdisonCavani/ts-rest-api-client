@@ -1,14 +1,21 @@
 # Typesafe TypeScript REST HTTP API Client
 
+<!--
+See:
+- https://github.com/stackblitz/webcontainer-core/issues/560
+- https://codesandbox.io/docs/learn/sandboxes/configuration#sandbox-configuration
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/adisoncavani/ts-rest-api-client/tree/master/src)
 [![Open in CodeSandbox](https://github-production-user-asset-6210df.s3.amazonaws.com/76855180/245275370-b89ea15d-8266-4adc-86d6-d0b58e1e2c7e.svg)](https://githubbox.com/AdisonCavani/ts-rest-api-client/tree/master/src)
+-->
 
 The `ts-rest-api-client` is a code-sample that provides a convenient and type-safe way to make RESTful HTTP requests in TypeScript. It enables you to define API endpoints, request options, and response types using TypeScript types and interfaces, ensuring type safety and enhancing developer productivity.
 
 ## Usage
 
 Fully-working Node.js example is available in the [`src`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src) folder.  
+<!--
 You can preview it live with [StackBlitz](https://stackblitz.com/github/adisoncavani/ts-rest-api-client/tree/master/src) or [CodeSandbox](https://githubbox.com/AdisonCavani/ts-rest-api-client/tree/master/src).
+-->
 
 In the provided code sample, we utilize the [JSONPlaceholder API](https://jsonplaceholder.typicode.com) to simulate a RESTful backend and showcase how to perform CRUD operations on mock data.
 
