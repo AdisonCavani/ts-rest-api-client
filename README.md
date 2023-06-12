@@ -72,7 +72,30 @@ For each method, you need to provide the appropriate request options and handle 
 
 ### Customization
 
-You can customize the library by modifying the types and interfaces defined in the [`http/requests.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/requests.ts) and [`http/responses.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/responses.ts) files. Update these files according to your API's request and response structures to ensure type safety and accurate data handling.
+You can customize the `client` and endpoinds by modifying the types and interfaces defined in the [`http/requests.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/requests.ts) and [`http/responses.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/responses.ts) files. Update these files according to your API's request and response structures to ensure type safety and accurate data handling.
+
+Make sure to change [`http/schema.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/schema.ts) accordingly:
+
+```typescript
+export interface EndpointsSchema {
+  "/posts": {
+    get: () => Promise<Post[]>;
+    post: (options: CreatePostOptions) => Promise<Post>;
+  };
+  "/posts/{id}": {
+    get: () => Promise<Post>;
+    put: (options: PutPostOptions) => Promise<Post>;
+    patch: (options: PatchPostOptions) => Promise<Post>;
+    delete: () => Promise<void>;
+  };
+  "/comments": {
+    get: (options: GetCommentsByPostIdOptions) => Promise<Comment[]>;
+  };
+  "/posts/{id}/comments": {
+    get: () => Promise<Comment[]>;
+  };
+}
+```
 
 ### Error Handling
 
