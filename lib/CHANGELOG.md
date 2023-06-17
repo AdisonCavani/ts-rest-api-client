@@ -1,5 +1,12 @@
 # ts-rest-api-client
 
+## 0.0.4
+
+### Patch Changes
+
+- 4542143: Add author and repository
+- 4e7ac4a: Changed the API - added createClient()
+
 ## 0.0.3
 
 ### Patch Changes
