@@ -1,17 +1,22 @@
 {
   "name": "ts-rest-api-client",
   "description": "",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "test": "node --loader tsx --test src/index.test.ts"
+    "dev": "node --watch --loader tsx --test src/index.test.ts",
+    "test": "node --loader tsx --test src/index.test.ts",
+    "release": "pnpm lint "
   },
   "author": "Adison Cavani",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "@types/node": "^20.3.1",
     "tsup": "^7.0.0",
     "tsx": "^3.12.7",
