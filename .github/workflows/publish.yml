@@ -1,14 +1,16 @@
-name: Publish
+name: Publish to NPM
 on:
-  push:
-    branches:
-      - "feat/npm-library"
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [feat/npm-library]
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     defaults:
       run:
         working-directory: lib
@@ -25,12 +27,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Lint
-        run: pnpm lint
       - name: Build
         run: pnpm build
-      - name: Test
-        run: pnpm test
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
