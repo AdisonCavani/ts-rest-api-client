@@ -1,5 +1,11 @@
 # ts-rest-api-client
 
+## 0.0.5
+
+### Patch Changes
+
+- 46ba6b1: fix: update .npmignore - add tsup.config.ts
+
 ## 0.0.4
 
 ### Patch Changes
