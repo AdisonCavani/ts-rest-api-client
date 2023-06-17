@@ -1,0 +1,19 @@
+{
+  "name": "ts-rest-api-client",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "test": "node --loader tsx --test src/index.test.ts"
+  },
+  "author": "Adison Cavani",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "tsup": "^7.0.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3"
+  }
+}
