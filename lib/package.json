@@ -1,4 +1,5 @@
 {
+  "private": false,
   "name": "ts-rest-api-client",
   "description": "",
   "version": "0.0.2",
