@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
+          cache-dependency-path: lib
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint && pnpm build && pnpm test
