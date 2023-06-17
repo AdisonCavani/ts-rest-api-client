@@ -1,8 +1,7 @@
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { describe, expect, it } from "vitest";
 
 describe("Whatever", () => {
   it("should pass CI", () => {
-    assert.strictEqual(1, 1);
+    expect(1).toBe(1);
   });
 });

@@ -1,9 +1,8 @@
 {
   "private": false,
   "name": "ts-rest-api-client",
-  "description": "",
+  "description": "Typesafe RESTful HTTP client",
   "version": "0.0.5",
-  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -11,8 +10,8 @@
     "build": "tsup --dts",
     "dev": "tsc --watch",
     "lint": "tsc",
-    "test": "node --loader tsx --test src/index.test.ts",
-    "testDev": "node --watch --loader tsx --test src/index.test.ts",
+    "test": "vitest --no-watch",
+    "testDev": "vitest",
     "release": "changeset publish"
   },
   "author": {
@@ -28,7 +27,7 @@
     "@changesets/cli": "^2.26.1",
     "@types/node": "^20.3.1",
     "tsup": "^7.0.0",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.3",
+    "vitest": "^0.32.2"
   }
 }
