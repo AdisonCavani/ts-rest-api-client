@@ -11,7 +11,7 @@
     "lint": "tsc",
     "dev": "node --watch --loader tsx --test src/index.test.ts",
     "test": "node --loader tsx --test src/index.test.ts",
-    "release": "pnpm lint "
+    "release": "changeset publish"
   },
   "author": "Adison Cavani",
   "license": "MIT",
