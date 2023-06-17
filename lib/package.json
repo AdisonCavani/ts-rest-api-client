@@ -2,7 +2,7 @@
   "private": false,
   "name": "ts-rest-api-client",
   "description": "Typesafe RESTful HTTP client",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

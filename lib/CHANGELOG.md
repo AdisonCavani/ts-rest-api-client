@@ -1,5 +1,11 @@
 # ts-rest-api-client
 
+## 0.0.6
+
+### Patch Changes
+
+- d10df57: Fixed ESM import
+
 ## 0.0.5
 
 ### Patch Changes
