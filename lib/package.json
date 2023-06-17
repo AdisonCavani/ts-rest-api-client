@@ -8,14 +8,22 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup --dts",
+    "dev": "tsc --watch",
     "lint": "tsc",
-    "dev": "node --watch --loader tsx --test src/index.test.ts",
     "test": "node --loader tsx --test src/index.test.ts",
+    "testDev": "node --watch --loader tsx --test src/index.test.ts",
     "release": "changeset publish"
   },
-  "author": "Adison Cavani",
+  "author": {
+    "name": "Adison Cavani",
+    "url": "https://github.com/AdisonCavani"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdisonCavani/ts-rest-api-client.git"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
     "@types/node": "^20.3.1",
