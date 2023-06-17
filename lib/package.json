@@ -2,7 +2,7 @@
   "private": false,
   "name": "ts-rest-api-client",
   "description": "",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
