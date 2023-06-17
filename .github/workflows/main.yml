@@ -19,7 +19,13 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
-          cache-dependency-path: lib
+          cache-dependency-path: lib/pnpm-lock.yaml
 
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm lint && pnpm build && pnpm test
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Lint
+        run: pnpm lint
+      - name: Build
+        run: pnpm build
+      - name: Test
+        run: pnpm test
