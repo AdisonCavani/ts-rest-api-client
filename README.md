@@ -4,30 +4,30 @@
 See:
 - https://github.com/stackblitz/webcontainer-core/issues/560
 - https://codesandbox.io/docs/learn/sandboxes/configuration#sandbox-configuration
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/adisoncavani/ts-rest-api-client/tree/master/src)
-[![Open in CodeSandbox](https://github-production-user-asset-6210df.s3.amazonaws.com/76855180/245275370-b89ea15d-8266-4adc-86d6-d0b58e1e2c7e.svg)](https://githubbox.com/AdisonCavani/ts-rest-api-client/tree/master/src)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/adisoncavani/ts-rest-api-client/tree/master/example)
+[![Open in CodeSandbox](https://github-production-user-asset-6210df.s3.amazonaws.com/76855180/245275370-b89ea15d-8266-4adc-86d6-d0b58e1e2c7e.svg)](https://githubbox.com/AdisonCavani/ts-rest-api-client/tree/master/example)
 -->
 
 The `ts-rest-api-client` is a code-sample that provides a convenient and type-safe way to make RESTful HTTP requests in TypeScript. It enables you to define API endpoints, request options, and response types using TypeScript types and interfaces, ensuring type safety and enhancing developer productivity.
 
 ## Usage
 
-Fully-working Node.js example is available in the [`src`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src) folder.  
+Fully-working Node.js example is available in the [`example`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/example) folder.  
 <!--
-You can preview it live with [StackBlitz](https://stackblitz.com/github/adisoncavani/ts-rest-api-client/tree/master/src) or [CodeSandbox](https://githubbox.com/AdisonCavani/ts-rest-api-client/tree/master/src).
+You can preview it live with [StackBlitz](https://stackblitz.com/github/adisoncavani/ts-rest-api-client/tree/master/example) or [CodeSandbox](https://githubbox.com/AdisonCavani/ts-rest-api-client/tree/master/example).
 -->
 
 In the provided code sample, we utilize the [JSONPlaceholder API](https://jsonplaceholder.typicode.com) to simulate a RESTful backend and showcase how to perform CRUD operations on mock data.
 
 To use the library, follow these steps:
 
-1. Configure your `.env` environment variable or hard-code the [`baseUrl`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/client.ts#LL12C1-L12C1):
+1. Configure your `.env` environment variable or hard-code the [`baseUrl`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/example/app/http/client.ts#LL12C1-L12C1):
 
 ```
 API_URL="https://jsonplaceholder.typicode.com"
 ```
 
-2. Copy the code from [`src`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src) folder
+2. Copy the code from [`example`](https://github.com/AdisonCavani/ts-rest-api-client/tree/master/example) folder
 
 3. Import an API client (in `index.ts` or other file):
 
@@ -83,9 +83,9 @@ For each method, you need to provide the appropriate request options and handle 
 
 ### Customization
 
-You can customize the `client` and endpoinds by modifying the types and interfaces defined in the [`http/requests.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/requests.ts) and [`http/responses.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/responses.ts) files. Update these files according to your API's request and response structures to ensure type safety and accurate data handling.
+You can customize the `client` and endpoinds by modifying the types and interfaces defined in the [`http/requests.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/example/app/http/requests.ts) and [`http/responses.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/example/app/http/responses.ts) files. Update these files according to your API's request and response structures to ensure type safety and accurate data handling.
 
-Make sure to change [`http/schema.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/src/app/http/schema.ts) accordingly:
+Make sure to change [`http/schema.ts`](https://github.com/AdisonCavani/ts-rest-api-client/blob/master/example/app/http/schema.ts) accordingly:
 
 ```typescript
 export interface EndpointsSchema {
