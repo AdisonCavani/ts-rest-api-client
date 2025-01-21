@@ -8,6 +8,8 @@ See:
 [![Open in CodeSandbox](https://github-production-user-asset-6210df.s3.amazonaws.com/76855180/245275370-b89ea15d-8266-4adc-86d6-d0b58e1e2c7e.svg)](https://githubbox.com/AdisonCavani/ts-rest-api-client/tree/master/src)
 -->
 
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/AdisonCavani/ts-rest-api-client/tree/master/src)
+
 The `ts-rest-api-client` is a code-sample that provides a convenient and type-safe way to make RESTful HTTP requests in TypeScript. It enables you to define API endpoints, request options, and response types using TypeScript types and interfaces, ensuring type safety and enhancing developer productivity.
 
 ## Usage
